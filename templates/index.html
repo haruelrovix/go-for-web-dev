@@ -1,6 +1,13 @@
 <html>
 
-<head></head>
+<head>
+  <style>
+    #search-results tr:hover {
+      background-color: lightgrey;
+      cursor: pointer;
+    }
+  </style>
+</head>
 
 <body>
   <form id="search-form" onsubmit="return false">
@@ -40,6 +47,12 @@
               + result.Year + "</td><td>" + result.ID + "</td></tr>"
             );
             searhResults.append(row);
+            row.on("click", () => {
+              $.ajax({
+                url: "/books/add?id=" + result.ID,
+                method: "GET"
+              })
+            })
           });
         }
       });

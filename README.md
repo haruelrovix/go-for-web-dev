@@ -7,3 +7,4 @@ Learning Go for Web Development
 - [Database drivers for SQLite in Go](https://astaxie.gitbooks.io/build-web-application-with-golang/en/05.3.html)
 - [Debugging Go code using VS Code](https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code)
 - [Delve is a debugger for the Go programming language](https://github.com/derekparker/delve)
+- [An experimental classification web service](http://classify.oclc.org/classify2/)
